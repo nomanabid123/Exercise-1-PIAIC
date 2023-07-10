@@ -111,4 +111,233 @@ console.log("Is 1 < 1", 1 < 1);
 console.log("noman".toLowerCase() == "Noman".toLowerCase());
 console.log(1 > 0 && 1 < 0);
 console.log(1 > 0 || 1 < 0);
-console.log(typeof age);
+console.log(cities.includes("Makkah"));
+console.log(cities.includes("Jaddah"));
+//Q:25
+let alien_color = "green";
+if (alien_color == "green") {
+    console.log("Player earned 5 points");
+}
+//Q:26
+if (alien_color == "green") {
+    console.log("Player earned 5 points");
+}
+else {
+    console.log("Player earned 10 points");
+}
+if (alien_color == "red") {
+    console.log("Player earned 5 points");
+}
+else {
+    console.log("Player earned 10 points");
+}
+//Q:27
+if (alien_color == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color == "yellow") {
+    console.log("Player earned 10 points");
+}
+else if (alien_color == "red") {
+    console.log("Player earned 15 points");
+}
+alien_color = "yellow";
+if (alien_color == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color == "yellow") {
+    console.log("Player earned 10 points");
+}
+else if (alien_color == "red") {
+    console.log("Player earned 15 points");
+}
+alien_color = "red";
+if (alien_color == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color == "yellow") {
+    console.log("Player earned 10 points");
+}
+else if (alien_color == "red") {
+    console.log("Player earned 15 points");
+}
+//Q:28
+let age1 = 20;
+if (age1 < 2) {
+    console.log("Person is a toddler");
+}
+else if (age1 >= 2 && age1 < 4) {
+    console.log("Person is a kid");
+}
+else if (age1 >= 4 && age1 < 13) {
+    console.log("Person is a child");
+}
+else if (age1 >= 13 && age1 < 20) {
+    console.log("Person is a teenager");
+}
+else if (age1 >= 20 && age1 < 65) {
+    console.log("Person is an adult");
+}
+else if (age1 >= 65) {
+    console.log("Person is an elder");
+}
+//Q:29
+let fav_fruits = ["apple", "banana", "orange", "mango", "grapes"];
+if (fav_fruits.includes("apple")) {
+    console.log("You really like apples");
+}
+if (fav_fruits.includes("banana")) {
+    console.log("You really like bananas");
+}
+if (fav_fruits.includes("orange")) {
+    console.log("You really like oranges");
+}
+if (fav_fruits.includes("mango")) {
+    console.log("You really like mangoes");
+}
+if (fav_fruits.includes("grapes")) {
+    console.log("You really like grapes");
+}
+//Q:30
+let usernames = ["noman", "ali", "ahmed", "zain", "zohaib", "ahsan", "hamza", "arshad", "aashir", "imran", "haris"];
+usernames.forEach(username => {
+    if (username == "admin") {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log("Hello ", username, ", thank you for logging in again.");
+    }
+});
+//Q:31
+if (usernames.length == 0) {
+    console.log("We need to find some users!");
+}
+usernames = [];
+if (usernames.length == 0) {
+    console.log("We need to find some users!");
+}
+//Q:32
+let current_users = ["noman", "ali", "ahmed", "zain", "zohaib", "ahsan", "hamza", "arshad", "aashir", "imran", "haris"];
+let new_users = ["noman", "ali", "ahmed", "zain", "shahzaib"];
+new_users.forEach(new_user => {
+    if (current_users.includes(new_user)) {
+        console.log("Username already exists, please enter a new username.");
+    }
+    else {
+        console.log(new_user, " is available.");
+    }
+});
+//Q:33
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+numbers.forEach(number => {
+    if (number == 1) {
+        console.log(number, "st");
+    }
+    else if (number == 2) {
+        console.log(number, "nd");
+    }
+    else if (number == 3) {
+        console.log(number, "rd");
+    }
+    else {
+        console.log(number, "th");
+    }
+});
+//Q:34
+let pizzas = ["Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme"];
+pizzas.forEach(pizza => {
+    console.log("i Like ", pizza, " pizza");
+});
+console.log("I love ", pizzas[0], " pizza\n i really love this pizza\n");
+//Q:35
+const animals = ["cat", "dog", "cow"];
+animals.forEach(animal => {
+    console.log("A ", animal, " would make a great pet.");
+});
+console.log("Any of these animals would make a great pet.");
+//Q:36
+function make_shirt(size = "large", message = "I love TypeScript") {
+    console.log(`Shirt size: ${size.toUpperCase()}`);
+    console.log(`Message: ${message}`);
+}
+make_shirt();
+// Q:37
+make_shirt("medium");
+make_shirt("small", "Hello, World!");
+// Q:38
+const describe_country = (city, country = "Pakistan") => {
+    console.log(`${city} is in ${country}`);
+};
+describe_country("Karachi");
+describe_country("Lahore");
+describe_country("London", "UK");
+// Q:39
+const city_country = (city, country = "Pakistan") => {
+    return `${city}, ${country}`;
+};
+console.log(city_country("Karachi"));
+console.log(city_country("Lahore"));
+console.log(city_country("London", "UK"));
+// Q:40 
+const make_album = (artist, album, tracks = 0) => {
+    if (tracks > 0) {
+        return {
+            artist,
+            album,
+            tracks
+        };
+    }
+    else {
+        return {
+            artist,
+            album
+        };
+    }
+};
+console.log(make_album("Atif Aslam", "Doorie", 12));
+console.log(make_album("Atif Aslam", "Doorie"));
+// Q:41
+const magicians = ["Harry Houdini", "David Copperfield", "Teller", "Dynamo"];
+const show_magicians = (magicians) => {
+    magicians.forEach(magician => {
+        console.log(magician);
+    });
+};
+show_magicians(magicians);
+// Q:42
+const make_great = (magicians) => {
+    let great_magicians = [];
+    magicians.forEach(magician => {
+        great_magicians.push(`The Great ${magician}`);
+    });
+    return great_magicians;
+};
+const great_magicians = make_great(magicians);
+show_magicians(great_magicians);
+// Q:43
+const magician_names = [...magicians];
+show_magicians(magician_names);
+const great_magician_names = make_great(magician_names);
+show_magicians(great_magician_names);
+// Q:44
+const make_sandwich = (items) => {
+    console.log("Sandwich is being prepared...");
+    items.forEach(item => {
+        console.log("Adding ", item);
+    });
+    console.log("Sandwich is ready!");
+};
+make_sandwich(["bread", "cheese", "chicken", "mayo", "bread"]);
+make_sandwich(["bread", "cheese", "mayo", "bread"]);
+make_sandwich(["bread", "cheese", "chicken", "bread"]);
+// Q:45
+const make_car = (manufactuere, model, ...options) => {
+    const car = {
+        manufactuere,
+        model,
+        options
+    };
+    return car;
+};
+const car = make_car("Honda", "Civic", "Power Windows", "Power Steering", "Power Mirrors", "Power Locks", "Keyless Entry", "Alloy Rims", "ABS", "Airbags");
+console.log(car);
