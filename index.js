@@ -33,45 +33,45 @@ console.log("My favorite number is: " + fav_num);
 console.log("My favorite number is: " + fav_num);
 //Q:11
 const names = ["Haris", "Imran", "Aashir"];
-names.forEach(name => console.log(name));
+names.forEach((name) => console.log(name));
 //Q:12
-names.forEach(name => console.log("Hello ", name, "how's it going?"));
+names.forEach((name) => console.log("Hello ", name, "how's it going?"));
 //Q:13
 const transportation = ["car", "bike"];
-transportation.forEach(transport => console.log("I would like to own a ", transport));
+transportation.forEach((transport) => console.log("I would like to own a ", transport));
 //Q:14
-const guest_list = ['Hamza', 'Arshad', 'Aashir', 'Imran', 'Haris'];
-guest_list.forEach(guest => console.log(guest, ", I would like to invite you to dinner on Saturday."));
+const guest_list = ["Hamza", "Arshad", "Aashir", "Imran", "Haris"];
+guest_list.forEach((guest) => console.log(guest, ", I would like to invite you to dinner on Saturday."));
 //Q:15
 console.log("Mr.", guest_list[0], "can't make it to dinner.");
 guest_list[0] = "Ali";
-guest_list.forEach(guest => console.log(guest, ", I would like to invite you to dinner on Saturday."));
+guest_list.forEach((guest) => console.log(guest, ", I would like to invite you to dinner on Saturday."));
 //Q:16
 guest_list.unshift("Zain");
 guest_list.splice(guest_list.length / 2, 0, "Zohaib");
 guest_list.push("Ahsan");
-guest_list.forEach(guest => console.log(guest, ", I would like to invite you to dinner on Saturday."));
-//Q:17  
+guest_list.forEach((guest) => console.log(guest, ", I would like to invite you to dinner on Saturday."));
+//Q:17
 console.log("I can only invite two people for dinner.");
 console.log("Sorry ", guest_list.pop(), "I can't invite you to dinner.");
 console.log("Sorry ", guest_list.pop(), "I can't invite you to dinner.");
-guest_list.forEach(guest => console.log(guest, ", I would like to invite you to dinner on Saturday."));
+guest_list.forEach((guest) => console.log(guest, ", I would like to invite you to dinner on Saturday."));
 //Q:18
 const places = ["Makkah", "Madina", "Karachi", "Lahore", "Islamabad"];
-places.forEach(place => console.log(place));
+places.forEach((place) => console.log(place));
 places.sort();
-places.forEach(place => console.log(place));
+places.forEach((place) => console.log(place));
 places.reverse();
-places.forEach(place => console.log(place));
+places.forEach((place) => console.log(place));
 //Q:19
 console.log("I'm going to invite ", guest_list.length, " people to dinner.");
 //Q:20
 const cities = ["Makkah", "Madina", "Karachi", "Lahore", "Islamabad"];
 const city1 = {
-    name: "Makkah"
+    name: "Makkah",
 };
 const city2 = {
-    name: "Madina"
+    name: "Madina",
 };
 //Q:22
 try {
@@ -81,7 +81,7 @@ catch (error) {
     console.log("Index error occurred:", error);
 }
 //Q:23
-//Conditional tests 
+//Conditional tests
 //1
 console.log(1 == 1);
 //2
@@ -199,8 +199,20 @@ if (fav_fruits.includes("grapes")) {
     console.log("You really like grapes");
 }
 //Q:30
-let usernames = ["noman", "ali", "ahmed", "zain", "zohaib", "ahsan", "hamza", "arshad", "aashir", "imran", "haris"];
-usernames.forEach(username => {
+let usernames = [
+    "noman",
+    "ali",
+    "ahmed",
+    "zain",
+    "zohaib",
+    "ahsan",
+    "hamza",
+    "arshad",
+    "aashir",
+    "imran",
+    "haris",
+];
+usernames.forEach((username) => {
     if (username == "admin") {
         console.log("Hello admin, would you like to see a status report?");
     }
@@ -217,9 +229,21 @@ if (usernames.length == 0) {
     console.log("We need to find some users!");
 }
 //Q:32
-let current_users = ["noman", "ali", "ahmed", "zain", "zohaib", "ahsan", "hamza", "arshad", "aashir", "imran", "haris"];
+let current_users = [
+    "noman",
+    "ali",
+    "ahmed",
+    "zain",
+    "zohaib",
+    "ahsan",
+    "hamza",
+    "arshad",
+    "aashir",
+    "imran",
+    "haris",
+];
 let new_users = ["noman", "ali", "ahmed", "zain", "shahzaib"];
-new_users.forEach(new_user => {
+new_users.forEach((new_user) => {
     if (current_users.includes(new_user)) {
         console.log("Username already exists, please enter a new username.");
     }
@@ -229,7 +253,7 @@ new_users.forEach(new_user => {
 });
 //Q:33
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-numbers.forEach(number => {
+numbers.forEach((number) => {
     if (number == 1) {
         console.log(number, "st");
     }
@@ -244,14 +268,71 @@ numbers.forEach(number => {
     }
 });
 //Q:34
-let pizzas = ["Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme", "Chicken Fajita", "Chicken Tikka", "Afghani Tikka", "BBQ", "Pepperoni", "Cheese Lover", "Veggie Lover", "Chicken Supreme"];
-pizzas.forEach(pizza => {
+let pizzas = [
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+    "Chicken Fajita",
+    "Chicken Tikka",
+    "Afghani Tikka",
+    "BBQ",
+    "Pepperoni",
+    "Cheese Lover",
+    "Veggie Lover",
+    "Chicken Supreme",
+];
+pizzas.forEach((pizza) => {
     console.log("i Like ", pizza, " pizza");
 });
 console.log("I love ", pizzas[0], " pizza\n i really love this pizza\n");
 //Q:35
 const animals = ["cat", "dog", "cow"];
-animals.forEach(animal => {
+animals.forEach((animal) => {
     console.log("A ", animal, " would make a great pet.");
 });
 console.log("Any of these animals would make a great pet.");
@@ -278,19 +359,19 @@ const city_country = (city, country = "Pakistan") => {
 console.log(city_country("Karachi"));
 console.log(city_country("Lahore"));
 console.log(city_country("London", "UK"));
-// Q:40 
+// Q:40
 const make_album = (artist, album, tracks = 0) => {
     if (tracks > 0) {
         return {
             artist,
             album,
-            tracks
+            tracks,
         };
     }
     else {
         return {
             artist,
-            album
+            album,
         };
     }
 };
@@ -299,7 +380,7 @@ console.log(make_album("Atif Aslam", "Doorie"));
 // Q:41
 const magicians = ["Harry Houdini", "David Copperfield", "Teller", "Dynamo"];
 const show_magicians = (magicians) => {
-    magicians.forEach(magician => {
+    magicians.forEach((magician) => {
         console.log(magician);
     });
 };
@@ -307,7 +388,7 @@ show_magicians(magicians);
 // Q:42
 const make_great = (magicians) => {
     let great_magicians = [];
-    magicians.forEach(magician => {
+    magicians.forEach((magician) => {
         great_magicians.push(`The Great ${magician}`);
     });
     return great_magicians;
@@ -322,7 +403,7 @@ show_magicians(great_magician_names);
 // Q:44
 const make_sandwich = (items) => {
     console.log("Sandwich is being prepared...");
-    items.forEach(item => {
+    items.forEach((item) => {
         console.log("Adding ", item);
     });
     console.log("Sandwich is ready!");
@@ -335,7 +416,7 @@ const make_car = (manufactuere, model, ...options) => {
     const car = {
         manufactuere,
         model,
-        options
+        options,
     };
     return car;
 };
