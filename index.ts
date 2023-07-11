@@ -1,6 +1,6 @@
 //Q:2
 
-let person_name = "John";
+let person_name:String = "John";
 console.log(
   "Hello " + person_name + ",  would you like to learn some Python today?"
 );
@@ -21,8 +21,8 @@ console.log(
 );
 
 //Q:5
-const famous_person = "Ali ibn Abi Talib (RA) once said";
-const message =
+const famous_person:String = "Ali ibn Abi Talib (RA) once said";
+const message:String =
   "“It is easier to turn a mountain into dust than to create love in a heart that is filled with hatred.”";
 console.log(famous_person + ", " + message);
 
@@ -50,7 +50,7 @@ console.log(4 * 2);
 console.log(16 / 2);
 
 //Q:9
-let fav_num = 7;
+let fav_num:Number = 7;
 console.log("My favorite number is: " + fav_num);
 
 //Q:10
@@ -59,7 +59,7 @@ console.log("My favorite number is: " + fav_num);
 console.log("My favorite number is: " + fav_num);
 
 //Q:11
-const names = ["Haris", "Imran", "Aashir"];
+const names:String[] = ["Haris", "Imran", "Aashir"];
 names.forEach((name) => console.log(name));
 
 //Q:12
@@ -67,14 +67,14 @@ names.forEach((name) => console.log(name));
 names.forEach((name) => console.log("Hello ", name, "how's it going?"));
 
 //Q:13
-const transportation = ["car", "bike"];
+const transportation:String[] = ["car", "bike"];
 transportation.forEach((transport) =>
   console.log("I would like to own a ", transport)
 );
 
 //Q:14
 
-const guest_list = ["Hamza", "Arshad", "Aashir", "Imran", "Haris"];
+const guest_list:String[] = ["Hamza", "Arshad", "Aashir", "Imran", "Haris"];
 guest_list.forEach((guest) =>
   console.log(guest, ", I would like to invite you to dinner on Saturday.")
 );
@@ -104,7 +104,7 @@ guest_list.forEach((guest) =>
 );
 
 //Q:18
-const places = ["Makkah", "Madina", "Karachi", "Lahore", "Islamabad"];
+const places:String[] = ["Makkah", "Madina", "Karachi", "Lahore", "Islamabad"];
 places.forEach((place) => console.log(place));
 places.sort();
 places.forEach((place) => console.log(place));
@@ -115,7 +115,7 @@ places.forEach((place) => console.log(place));
 console.log("I'm going to invite ", guest_list.length, " people to dinner.");
 
 //Q:20
-const cities = ["Makkah", "Madina", "Karachi", "Lahore", "Islamabad"];
+const cities:String[] = ["Makkah", "Madina", "Karachi", "Lahore", "Islamabad"];
 
 //Q:21
 interface city {
@@ -143,7 +143,7 @@ console.log(1 == 1);
 console.log(1 != 1);
 //3
 
-let age = 20;
+let age:number = 20;
 console.log(age > 18);
 //4
 console.log(age < 18);
@@ -175,7 +175,7 @@ console.log(cities.includes("Jaddah"));
 
 //Q:25
 
-let alien_color = "green";
+let alien_color:String = "green";
 if (alien_color == "green") {
   console.log("Player earned 5 points");
 }
@@ -221,7 +221,7 @@ if (alien_color == "green") {
 }
 
 //Q:28
-let age1 = 20;
+let age1:number = 20;
 if (age1 < 2) {
   console.log("Person is a toddler");
 } else if (age1 >= 2 && age1 < 4) {
@@ -237,7 +237,7 @@ if (age1 < 2) {
 }
 
 //Q:29
-let fav_fruits = ["apple", "banana", "orange", "mango", "grapes"];
+let fav_fruits:String[] = ["apple", "banana", "orange", "mango", "grapes"];
 if (fav_fruits.includes("apple")) {
   console.log("You really like apples");
 }
@@ -255,7 +255,7 @@ if (fav_fruits.includes("grapes")) {
 }
 
 //Q:30
-let usernames = [
+let usernames:String[] = [
   "noman",
   "ali",
   "ahmed",
@@ -288,7 +288,7 @@ if (usernames.length == 0) {
 }
 
 //Q:32
-let current_users = [
+let current_users:String[] = [
   "noman",
   "ali",
   "ahmed",
@@ -301,7 +301,7 @@ let current_users = [
   "imran",
   "haris",
 ];
-let new_users = ["noman", "ali", "ahmed", "zain", "shahzaib"];
+let new_users:String[] = ["noman", "ali", "ahmed", "zain", "shahzaib"];
 
 new_users.forEach((new_user) => {
   if (current_users.includes(new_user)) {
@@ -312,7 +312,7 @@ new_users.forEach((new_user) => {
 });
 
 //Q:33
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let numbers:number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 numbers.forEach((number) => {
   if (number == 1) {
     console.log(number, "st");
@@ -326,7 +326,7 @@ numbers.forEach((number) => {
 });
 
 //Q:34
-let pizzas = [
+let pizzas:String[] = [
   "Chicken Fajita",
   "Chicken Tikka",
   "Afghani Tikka",
@@ -390,7 +390,7 @@ pizzas.forEach((pizza) => {
 console.log("I love ", pizzas[0], " pizza\n i really love this pizza\n");
 
 //Q:35
-const animals = ["cat", "dog", "cow"];
+const animals:String[] = ["cat", "dog", "cow"];
 animals.forEach((animal) => {
   console.log("A ", animal, " would make a great pet.");
 });
@@ -443,9 +443,9 @@ console.log(make_album("Atif Aslam", "Doorie", 12));
 console.log(make_album("Atif Aslam", "Doorie"));
 
 // Q:41
-const magicians = ["Harry Houdini", "David Copperfield", "Teller", "Dynamo"];
+const magicians:String[] = ["Harry Houdini", "David Copperfield", "Teller", "Dynamo"];
 
-const show_magicians = (magicians: string[]) => {
+const show_magicians = (magicians: String[]) => {
   magicians.forEach((magician) => {
     console.log(magician);
   });
@@ -454,8 +454,8 @@ const show_magicians = (magicians: string[]) => {
 show_magicians(magicians);
 
 // Q:42
-const make_great = (magicians: string[]) => {
-  let great_magicians: string[] = [];
+const make_great = (magicians: String[]) => {
+  let great_magicians: String[] = [];
   magicians.forEach((magician) => {
     great_magicians.push(`The Great ${magician}`);
   });
@@ -473,7 +473,7 @@ show_magicians(great_magician_names);
 
 // Q:44
 
-const make_sandwich = (items: string[]) => {
+const make_sandwich = (items: String[]) => {
   console.log("Sandwich is being prepared...");
   items.forEach((item) => {
     console.log("Adding ", item);
@@ -487,9 +487,9 @@ make_sandwich(["bread", "cheese", "chicken", "bread"]);
 
 // Q:45
 const make_car = (
-  manufactuere: string,
-  model: string,
-  ...options: string[]
+  manufactuere: String,
+  model: String,
+  ...options: String[]
 ) => {
   const car = {
     manufactuere,

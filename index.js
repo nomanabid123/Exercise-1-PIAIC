@@ -28,12 +28,11 @@ console.log(16 / 2);
 let fav_num = 7;
 console.log("My favorite number is: " + fav_num);
 //Q:10
-/* adding comment */
+//adding comments to the code
 //my fav number
 console.log("My favorite number is: " + fav_num);
 //Q:11
 const names = ["Haris", "Imran", "Aashir"];
-/* iterating over user names */
 names.forEach((name) => console.log(name));
 //Q:12
 names.forEach((name) => console.log("Hello ", name, "how's it going?"));
