@@ -443,9 +443,9 @@ console.log(make_album("Atif Aslam", "Doorie", 12));
 console.log(make_album("Atif Aslam", "Doorie"));
 
 // Q:41
-const magicians:String[] = ["Harry Houdini", "David Copperfield", "Teller", "Dynamo"];
+const magicians:string[] = ["Harry Houdini", "David Copperfield", "Teller", "Dynamo"];
 
-const show_magicians = (magicians: String[]) => {
+const show_magicians = (magicians: string[]) => {
   magicians.forEach((magician) => {
     console.log(magician);
   });
@@ -454,8 +454,8 @@ const show_magicians = (magicians: String[]) => {
 show_magicians(magicians);
 
 // Q:42
-const make_great = (magicians: String[]) => {
-  let great_magicians: String[] = [];
+const make_great = (magicians: string[]) => {
+  let great_magicians: string[] = [];
   magicians.forEach((magician) => {
     great_magicians.push(`The Great ${magician}`);
   });
@@ -473,7 +473,7 @@ show_magicians(great_magician_names);
 
 // Q:44
 
-const make_sandwich = (items: String[]) => {
+const make_sandwich = (items: string[]) => {
   console.log("Sandwich is being prepared...");
   items.forEach((item) => {
     console.log("Adding ", item);
@@ -487,9 +487,9 @@ make_sandwich(["bread", "cheese", "chicken", "bread"]);
 
 // Q:45
 const make_car = (
-  manufactuere: String,
-  model: String,
-  ...options: String[]
+  manufactuere: string,
+  model: string,
+  ...options: string[]
 ) => {
   const car = {
     manufactuere,
